@@ -8,7 +8,7 @@
     body {background: #000;}
     
     .box {
-        min-height: 10vh;
+        margin-top:20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -26,7 +26,7 @@
     }
 
     h3 {
-        font-size: 2vw;
+        font-size: 5vw;
         font-weight: 500;
         color: transparent;
         background: rgb(255, 0, 0);
@@ -56,7 +56,7 @@
     }
 
     h4 {
-        font-size: 1.4vw;
+        font-size: 4vw;
         font-weight: 400;
         color: transparent;
         background: rgb(255, 0, 0);
@@ -84,10 +84,6 @@
         background-size: 500%;
         animation: color 3s linear infinite;
     }
-
-
-  
-  }
 </style>
 </head>
 <body>
@@ -95,11 +91,11 @@
     <div class="box">
         <h3>ŞİFA OLSUNNNNN</h3>
     </div>
-    <div class="box" style="margin-top:10px;">
+    <div class="box">
     	<h4>NAZAR DEĞMESİN</h4>
     </div>
     <center>
-	    <img id="gifId" src="1.gif" width="600"/>
+	    <img style="margin-top:25px;" id="gifId" src="1.gif" width="800"/>
 	    <!-- 
 		<video id="video" width="700" controls>
 			<source src="video.mp4" type="video/mp4">
@@ -113,14 +109,13 @@
 
 <!-- <script type="text/javascript" src="jquery.js"></script> -->
 <script type="text/javascript">
-	var maxNum = 3;
+	var maxNum = 4;
 	var srcNum = Math.floor(Math.random() * maxNum) + 1;
 
 	var image = document.getElementById("gifId");
 	if(image) {
  	    image.src = srcNum + ".gif";
 	}
-	
 	
 	<!-- var playing = false; -->
 	
@@ -142,10 +137,10 @@
 	<!-- }); -->
 
 	function kac(element) {
-	  var x = Math.random() * (window.innerWidth - element.clientWidth);
-	  var y = Math.random() * (window.innerHeight - element.clientHeight);
-	  element.style.top = y + 'px';
-	  element.style.left = x + 'px';
+        var x = Math.random() * (window.innerWidth - element.clientWidth);
+        var y = Math.random() * (window.innerHeight - element.clientHeight);
+        element.style.top = y + 'px';
+        element.style.left = x + 'px';
 	}
 </script>
 
