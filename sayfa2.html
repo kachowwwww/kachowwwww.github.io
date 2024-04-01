@@ -66,23 +66,29 @@
     <div class ="box">
         <h3>KACHOWWWWWWW</h3>
     </div>
-
     <center>
+	    <img id="gifId" src="1.gif" width="700"/>
+	    <!-- 
 		<video id="video" width="700" controls>
 			<source src="video.mp4" type="video/mp4">
 		</video>
+	    -->
 	</center>
-
-    <br><br><br>
-   
-    </div>
-
- 
+    <br><br><br>  
+    </div> 
 </a>
 </div>
 
 <!-- <script type="text/javascript" src="jquery.js"></script> -->
 <script type="text/javascript">
+	var maxNum = 3;
+	var srcNum = Math.floor(Math.random() * maxNum);
+
+	var image = document.getElementById("gifId");
+	if(image) {
+ 	    image.src = srcNum + ".gif";
+	}
+	
 	
 	<!-- var playing = false; -->
 	
