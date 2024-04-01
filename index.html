@@ -26,7 +26,7 @@
     }
 
     h3 {
-        font-size: 2vw;
+        font-size: 5vw;
         font-weight: 500;
         color: transparent;
         background: rgb(255, 0, 0);
@@ -55,21 +55,23 @@
         animation: color 3s linear infinite;
     }
 
-	.btn-danger {
-		background-color: rgb(229 0 255);
-		border-color: rgb(229 0 255);
-	}
-
+  .evet-btn {
+    width:150px;
+    font-size:22pt;
+    font-weight: 500;
+    height: 75px;
+  }
   .kacan-buton {
-    font-size:20pt;
-    width:100px;
+    height: 75px;
+    font-weight: 500;
+    font-size:22pt;
+    width:150px;
     background-color: rgb(229 0 255);
     color: white;
     text-align: center;
     cursor: pointer;
     transition: top 0.2s, left 0.2s;
     margin-left: 20px;
-    display: flex;
   }
 
   .kacan-buton:hover {
@@ -92,11 +94,11 @@
   </div>
 
   <div class="row col-md-12 d-flex justify-content-center" style="margin-top: 15px;">
-    <img class="text-center center col-md-7 align-self-center" src="ilac1.png">
+    <img class="text-center center col-md-10 align-self-center" src="ilac1.png">
   </div>
 
   <div class="buttons row col-md-12 d-flex justify-content-center" style="margin-top:15px;">
-    <button type="button" class="btn btn-light" style="width:100px;font-size:20pt;"><a href="sayfa2.html">EVET</a></button>
+    <button type="button" class="btn btn-light evet-btn"><a href="sayfa2.html">EVET</a></button>
     <button type="button" onmouseover="kac(this)" class="kacan-buton btn">HAYIR</button>   
   </div>
 
