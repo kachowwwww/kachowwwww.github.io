@@ -89,52 +89,50 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <div class="box">
-        <h3>ŞİFA OLSUNNNNN</h3>
+        <h3>KACHOWWWWWW</h3>
     </div>
-    <div class="box">
+    <!-- <div class="box">
     	<h4>NAZAR DEĞMESİN</h4>
-    </div>
+    </div>  -->
     <center>
-	    <img style="margin-top:25px;" id="gifId" src="1.gif" width="800"/>
-	    <!-- 
+        <!-- <img style="margin-top:25px;" id="gifId" src="1.gif" width="800"/> 	     -->
 		<video id="video" width="700" controls>
 			<source src="video.mp4" type="video/mp4">
-		</video>
-	    -->
+		</video>	   
 	</center>
     <br><br><br>  
     </div> 
 </a>
 </div>
 
-<!-- <script type="text/javascript" src="jquery.js"></script> -->
+ <script type="text/javascript" src="jquery.js"></script> 
 <script type="text/javascript">
 	var maxNum = 4;
-	var srcNum = Math.floor(Math.random() * maxNum) + 1;
+    var srcNum = Math.floor(Math.random() * maxNum) + 1;
 
-	var image = document.getElementById("gifId");
-	if(image) {
- 	    image.src = srcNum + ".gif";
-	}
+    var image = document.getElementById("gifId");
+    if(image) {
+        image.src = srcNum + ".gif";
+    }
 	
-	<!-- var playing = false; -->
+    var playing = false; 
 	
-	<!-- document.body.addEventListener("click", function () { -->
-		<!-- if(playing) { -->
-			<!-- $("#video").get(0).pause(); -->
-			<!-- playing = false; -->
-		<!-- }else{ -->
-		<!-- $("#video").get(0).play(); -->
-			<!-- playing = true; -->
-		<!-- } -->
-	<!-- }); -->
+    document.body.addEventListener("click", function () { 
+        if(playing) { 
+            $("#video").get(0).pause(); 
+            playing = false; 
+        } else { 
+            $("#video").get(0).play(); 
+                playing = true; 
+            } 
+	 }); 
 	
-	<!-- document.body.addEventListener("mousemove", function () { -->
-		<!-- if(!playing) { -->
-			<!-- $("#video").get(0).play(); -->
-			<!-- playing = true; -->
-		<!-- }		 -->
-	<!-- }); -->
+    document.body.addEventListener("mousemove", function () { 
+        if(!playing) { 
+            $("#video").get(0).play(); 
+            playing = true; 
+        }		 
+    }); 
 
 	function kac(element) {
         var x = Math.random() * (window.innerWidth - element.clientWidth);
