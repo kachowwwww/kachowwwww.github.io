@@ -24,7 +24,37 @@
             background-position: 100% 50%;
         }
     }
-
+    
+    h4 {
+            font-size: 4vw;
+            font-weight: 500;
+            color: transparent;
+            background: rgb(255, 0, 0);
+            background: linear-gradient(
+                90deg,
+                rgba(255, 0, 0, 1)0%,
+                rgba(238, 100, 10, 1)7%,
+                rgba(210, 169, 39, 1)14%,
+                rgba(234, 252, 62, 1)21%,
+                rgba(134, 248, 82, 1)28%,
+                rgba(99, 245, 156, 1)35%,
+                rgba(87, 241, 215, 1)42%,
+                rgba(75, 216, 237, 1)49%,
+                rgba(66, 158, 239, 1)56%,
+                rgba(57, 74, 241, 1)63%,
+                rgba(126, 45, 244, 1)70%,
+                rgba(162, 84, 247, 1)77%,
+                rgba(229, 117, 249, 1)84%,
+                rgba(251, 103, 164, 1)91%,
+                rgba(253, 127, 190, 1)98%,
+                rgba(255, 0, 191, 1)100%
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-size: 500%;
+            animation: color 3s linear infinite;
+        }
+    
     h3 {
         font-size: 5vw;
         font-weight: 500;
@@ -94,7 +124,11 @@
 <body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <div class="row col-md-12 center text-center box">
-    <h4>KAHVE</h4><h3>ALKOL DATE'İNE NE DERSİN?</h3>  
+    <div style="display:flex;">
+        <h4 style="text-decoration: line-through;">KAHVE</h4>
+        <h3 style="margin-left:7px;">ALKOL DATE'İNE NE DERSİN?</h3>  
+    </div>
+    
   </div>
 
   <div class="row col-md-12 d-flex justify-content-center" style="margin-top: 15px;">
